@@ -10,6 +10,11 @@
 # For the individual level, set make_diagnostics(..., individual = T),
 # for the group level, set make_diagnostics(..., individual = F)
 
+#------------------
+# SOURCE FUNCTIONS
+#------------------
+# read in functions from theoretical script/part 1
+source('functions_260124.R')
 
 #---------------
 # SIMULATE DATA
