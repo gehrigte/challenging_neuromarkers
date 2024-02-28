@@ -94,7 +94,7 @@ variables <- paste("B", 1:20, sep = "")
 #Average correlation 
 net_cor1 <-  runif(1000, 0.29, 0.31)
 
-N_ind <- 10
+N_ind <- 1000
 data <- replicate(N_ind, make_data_network(N, net_cor = net_cor1, var_names = variables, 
                                         error_mean = 0, error_sd = 0.3, low = T), simplify = F)
 
