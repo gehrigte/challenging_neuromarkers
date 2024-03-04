@@ -6,6 +6,11 @@
 ## Any mathematical or technical questions (i.e., how we operationalized a certain
 ## idea or construct) can be (attempted to) answer here.
 
+## 20240304 HC; This is (first) attempt to add a note your code. It should be easier but, I am still also figuring git(hub) out. 
+# Code looks great in many ways, and I will test. 
+# I would say that one thing to maybe work on, are the spots where the number of variables ('brain regions') are hard coded. 
+# It would be great to have those all as options in the function arguments, so it is easy to change them. But we can look at all the details at a later point when we meet. 
+
 #---------------------
 # LIBRARIES
 #---------------------
