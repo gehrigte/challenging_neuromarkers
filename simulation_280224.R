@@ -51,8 +51,9 @@ data_full <- do.call(rbind.data.frame, data) %>%
 # Finally, we calculate model diagnostics (this may take a while, as R calculates
 # 100000 models in the background):
 
+# How well does the model predict for the individual?:
 out_individ <- make_diagnostics(data_full, individual = T)
-
+# How well does the model predict for a group at one time point?:
 out_msmt <- make_diagnostics(data_full, individual = F)
 
 # LOW MR
