@@ -193,7 +193,7 @@ make_diagnostics <- function(data, individual = TRUE, time = NULL, network = NUL
     if (individual == TRUE && (time == FALSE || is.null(time))) {
       models <- data %>% 
         group_by(ID) %>% 
-        do(lin_model = lm(S ~ B1 + B2 + B3 + B4 + B5 + B6 + B7 + B8, data = .))
+        do(lin_model = lm(S ~ B1 + B2 + B3 + B4 + B5 + B6 + B7 + B8, data = .)) #TO DO: change hard coded part
       # https://stackoverflow.com/questions/1169539/linear-regression-and-group-by-in-r
       
       # R-squared for predictive model of brain region activity on symptom 
