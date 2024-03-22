@@ -94,9 +94,12 @@ make_data_mr <- function(N, cor_bs, cor_bb, var_names, low = NULL, medium = NULL
   # deviations are acceptable
   # here we make sure the first row is not too different from the intended numbers 
   # (var 0.01, mean 0.2):
+  round <- 0
   while(((abs(mean(cor(data)[2:9,1]) - mean(cor_bs))) > 0.005) | 
         (abs(var(cor(data)[2:9,1]) - var(cor_bs)) > 0.004)) {
+    round <- round + 1
     data <- rnorm_multi(n = N, vars = p + 1, r = m)
+    #ADD STOPPING CONDITION
   }
   return(data)
 }
