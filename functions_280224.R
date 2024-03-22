@@ -370,7 +370,7 @@ make_diagnostics <- function(data, individual = TRUE, time = NULL, network = NUL
   return(out)
 }
 
-make_diagnostics(data_full, individual = T, time = T)
+
 
 
 
