@@ -44,6 +44,7 @@ library(tidyverse)
 
 # Our simulation is based on 8 brain regions, meaning we pre-define a vector
 # of brain-symptom correlation with length 8. This can be easily adapted.
+# TO DO: ADD LIMITATIONS OF DIMENSIONS (e.g., very high correlations)
 
 make_data_mr <- function(N, cor_bs, cor_bb, var_names, low = NULL, medium = NULL, high = NULL){ 
   if(is.null(low)&is.null(medium)&is.null(high)){
@@ -88,7 +89,7 @@ make_data_mr <- function(N, cor_bs, cor_bb, var_names, low = NULL, medium = NULL
      m[1, ] <- m[, 1] <- s1
      colnames(m) <- rownames(m) <-  var_names
    }
-  data <- rnorm_multi(n = N, vars = p+1, r = m, varnames = var_names)
+  data <- rnorm_multi(n = N, vars = p+1, r = m, varnames = var_names)  #TO DO: check whether I can add deviations up to certain level/argument
   # usually the numbers are not exactly as intended, but we can decide which 
   # deviations are acceptable
   # here we make sure the first row is not too different from the intended numbers 
