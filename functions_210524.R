@@ -105,6 +105,8 @@ make_data_mr <- function(N, cor_bs, cor_bb, var_names, low = NULL, medium = NULL
 # activation in different brain regions are summarized to make a network. The 
 # activity of (parts of) the network yields the symptom variable S.
 
+
+# THIS IS WHERE (MOST LIKELY) SOMETHING GOES WRONG:
 make_data_network <- function(N, net_cor, n_var, var_names, error_mean, error_sd, 
                               low = NULL, medium = NULL, high = NULL){
   if(is.null(low)&is.null(medium)&is.null(high)){
