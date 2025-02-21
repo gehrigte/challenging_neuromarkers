@@ -3,6 +3,6 @@ Here, we provide code for replicating the simulation for our paper 'The troublin
 
 The code consists of two parts:
 
-Part 1 - Technical Script (functions_260124): In this script, we load necessary packages, then pre-define the simulation and plot functions, that are used (i.e., called) in the main script. Any mathematical or technical questions (i.e., how we operationalized a certain idea or construct) can be (attempted to) answer here.
+Part 1 - Technical Script ('functions'): In this script, we load necessary packages, then pre-define the simulation and plot functions, that are called in the main script. Mathematical and technical definitions can be found in this part of the code.
 
-Part 2 - Practical Script (simulations_260124): In this script, we define our variables of interest and simulate the data. We call our functions that we defined in the technical script. This script allows the user to play around with model parameters of interest (e.g., different vectors of brain-symptom correlations) and see how changes impact model parameters such as R squared or classification accuracy, both, on an individual, or group level. 
+Part 2 - Practical Script ('simulation'): In this script, we define the variables of interest and simulate the data. We call functions that were defined in the technical script. This script allows the user to test different model parameters (e.g., different vectors of brain-symptom correlations) and see how changes in parameters impact diagnostic model parameters such as R squared or classification accuracy, both, on an individual or group level. 
