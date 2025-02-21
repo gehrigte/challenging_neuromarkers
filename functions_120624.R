@@ -11,7 +11,7 @@
 #---------------------
 # We load libraries that are necessary for following the next steps of this script.
 # If a library is not installed, you can easily install it by calling 
-# install.packages('foo'), and replace 'foo' with the respective package name.
+# install.packages('foo'), and replace foo with the respective package name.
 
 library(faux)
 library(dplyr)
@@ -89,8 +89,8 @@ make_data_mr <- function(N, cor_bs, cor_bb, var_names, low = NULL, medium = NULL
   data <- rnorm_multi(n = N, vars = p+1, r = m, varnames = var_names)
   # usually the numbers are not exactly as intended, but we can decide which 
   # deviations are acceptable
-  # here we make sure the first row is not too different from the intended numbers 
-  # (var 0.01, mean 0.2):
+  # here we make sure the first row differs from the intended variance and mean (var 0.01, mean 0.2)
+  # max by .004/.005, respectively:
   while(((abs(mean(cor(data)[2:9,1]) - mean(cor_bs))) > 0.005) | 
         (abs(var(cor(data)[2:9,1]) - var(cor_bs)) > 0.004)) {
     data <- rnorm_multi(n = N, vars = p + 1, r = m)
