@@ -1,5 +1,5 @@
 # challenging_neuromarkers
-Here, we provide code for replicating the simulation for our paper 'The troubling pursuit of brain biomarkers for mental health' or for experimenting with different parameters.
+Here, we provide the corresponding R code to the simulation our paper 'The troubling pursuit of brain biomarkers for mental health: multiple realizability, emergence and noise.' is based on. With the code, our findings can be replicated, or the reader may experiment with different parameters to see how these impact diagnostic model parameters.
 
 The code consists of two parts:
 
